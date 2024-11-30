@@ -1,214 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bird Supply | Your favorite accounts supplier</title>
-    <link rel="stylesheet" href="main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
-    <script src="https://cdn.sellix.io/static/js/embed.js"></script>
-    <link href="https://cdn.sellix.io/static/css/embed.css" rel="stylesheet"/>
+    <title>ACHTUNG: HUNDE ALS KÖDER!</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="loading">
+<body>
+<header>
+    <h1>ACHTUNG: HUNDE ALS KÖDER!</h1>
+    <p>Ein trauriger Hund auf der Straße – und ein Appell an uns alle</p>
+    <button onclick="scrollToSection()">Mehr erfahren</button>
+</header>
 
-<div class="loader active">
-    <img src="assets/logo.png" alt="">
-</div>
+<div class="container" id="info-section">
+    <h2>Das Problem</h2>
+    <p>In vielen Städten werden Hunde von Bettlern als <span class="highlight">Köder</span> benutzt, um Mitleid zu erwecken und Geld zu sammeln. Diese Tiere leiden oft unter schlimmen Bedingungen und brauchen dringend unsere Hilfe.</p>
 
-<div class="blur_shape"></div>
-<div class="blur_shape-2"></div>
+    <h2>Wie erkenne ich Missbrauch?</h2>
+    <ul>
+        <li>Ungepflegte Hunde mit verfilztem Fell</li>
+        <li>Tiere, die lange Zeit an einem Ort verweilen</li>
+        <li>Mangel an Wasser und Futter</li>
+        <li>Anzeichen von Krankheit oder Verletzungen</li>
+    </ul>
 
-<div class="header">
-    <a href="/">
-        <img src="assets/logo.png" alt="" class="logo">
-    </a>
-    <div class="nav row a-center gap-5">
-        <div class="row a-center gap-5">
-            <a class="nav_item" onclick="backTop()">Home</a>
-            <a class="nav_item" href="#listing">Products</a>
-            <a class="nav_item" href="#faq">FAQ</a>
-        </div>
-        <a href="#listing" class="cta">Shop Now</a>
+    <h2>Wie Sie helfen können:</h2>
+    <ul>
+        <li><strong>Sinnvoll spenden:</strong> Unterstützen Sie lokale Tierschutzorganisationen.</li>
+        <li><strong>Informieren:</strong> Melden Sie verdächtige Fälle an Tierschutzvereine oder Veterinärämter.</li>
+        <li><strong>Aufmerksam bleiben:</strong> Teilen Sie Ihre Beobachtungen und klären Sie Ihr Umfeld auf.</li>
+    </ul>
+
+    <h2>Ein wichtiger Hinweis</h2>
+    <p class="important-note">
+        Nicht alle Menschen, die auf der Straße um Hilfe bitten, behandeln Tiere schlecht. Viele kümmern sich liebevoll um ihre Begleiter und teilen das Wenige, das sie haben. 
+        Dieser Hinweis zielt darauf ab, Missbrauchsfälle zu erkennen und Tieren in Not zu helfen, ohne pauschal zu urteilen. Es ist wichtig, mit Empathie und Achtsamkeit zu handeln.
+    </p>
+
+    <div class="cta">
+        <a href="#kontakt">Jetzt helfen!</a>
     </div>
 </div>
-<div class="header_shadow"></div>
 
-<div class="container">
-
-
-    <div class="section column gap-1 w-100" id="home">
-        <div class="overflow">
-            <h1 class="title">Your favorite <span class="bold-blue">Twitter</span> & <span class="bold-red">Discord </span><br>accounts supplier</h1>
-        </div>
-        <div class="overflow mt-2">
-            <div class="cta_container">
-                <a href="#listing" class="cta">Discover</a>
+<footer>
+    <div class="footer-content">
+        <h2>Kontakt</h2>
+        <p>Wir sind hier, um zu helfen. Wenden Sie sich an:</p>
+        <div class="contact-links">
+            <div class="contact-item">
+                <img src="https://img.icons8.com/ios-filled/50/e94560/charity.png" alt="Tierschutzorganisationen">
+                <a href="#">Lokale Tierschutzorganisationen</a>
+            </div>
+            <div class="contact-item">
+                <img src="https://img.icons8.com/ios-filled/50/e94560/clinic.png" alt="Veterinärämter">
+                <a href="#">Veterinärämter</a>
             </div>
         </div>
-        <div class="overflow w-100 a-end j-end row">
-            <p class="subtitle relative mt-2">We provide our clients the finest quality accounts available in the market. Our accounts are not only private and fresh, but also budget-friendly, which ensures that you will never have to worry about the quality of tokens again.</p>
-        </div>
-    </div>
-
-    <div class="overflow">
-        <div class="features relative">
-            <div class="features_container">
-                <div class="features_wrapper">
-                    <div class="feature_item">
-                        <img src="assets/features/feature-1.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-2.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-3.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-4.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-5.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-6.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-1.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-2.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-3.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-4.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-5.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-6.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-1.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-2.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-3.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-4.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-5.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-6.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-1.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-2.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-3.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-4.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-5.png" alt="" class="feature">
-                    </div>
-                    <div class="feature_item">
-                        <img src="assets/features/feature-6.png" alt="" class="feature">
-                    </div>
-                </div>
-            </div>
+        <div class="social-links">
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook--v1.png" alt="Facebook"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter"></a>
         </div>
     </div>
-
-
-    <div class="section row gap-1 w-100" id="listing">
-        <div class="listing_item column">
-            <span class="listing_title mb-1">
-                Discord
-            </span>
-
-            <div class="grid gap-1" id="discord">
-
-            </div>
-        </div>
-
-        <div class="listing_item column">
-            <span class="listing_title mb-1">
-                Twitter
-            </span>
-
-            <div class="grid gap-1" id="twitter">
-
-            </div>
-        </div>
-
+    <div class="footer-bottom">
+        <p>© 2024 Tierschutzinitiative | Alle Rechte vorbehalten.</p>
     </div>
+</footer>
 
-
-    <div class="section faq column gap-4 mt-4" id="faq">
-        <div class="grid gap-4">
-            <div class="faq_item column">
-                <span class="faq_title">Need help?</span>
-                <p class="faq_subtitle mt-1">We're here to help you if you need support with your order, feel free to open a ticket in our server.</p>
-                <a href="https://discord.gg/birdsupply" class="cta mt-1">Support ticket</a>
-            </div>
-            <div class="faq_item column">
-                <span class="faq_title">Twitter followers</span>
-                <p class="faq_subtitle mt-1">Feel free to contact us on Discord if you’re looking for custom Twitter accounts with activity.</p>
-                <a href="https://discord.gg/birdsupply" class="cta mt-1">Learn more</a>
-            </div>
-            <div class="faq_item column">
-                <span class="faq_title">Payment methods</span>
-                <p class="faq_subtitle mt-1">We currently accept all major cryptocurrencies.</p>
-                <div class="mt-1 row gap-1-2 a-center">
-                    <img src="assets/cryptos/crypto-1.png" alt="" class="crypto">
-                    <img src="assets/cryptos/crypto-2.png" alt="" class="crypto">
-                    <img src="assets/cryptos/crypto-3.png" alt="" class="crypto">
-                    <img src="assets/cryptos/crypto-4.png" alt="" class="crypto">
-                    <img src="assets/cryptos/crypto-5.png" alt="" class="crypto">
-                    <img src="assets/cryptos/crypto-6.png" alt="" class="crypto">
-                    <img src="assets/cryptos/crypto-7.png" alt="" class="crypto">
-                    <span class="crypto_text">
-                        And more...
-                    </span>
-                </div>
-            </div>
-            <div class="faq_item column">
-                <span class="faq_title">Need help?</span>
-                <p class="faq_subtitle mt-1">Feel free to open a ticket on our server if you need help.</p>
-                <div class="row gap-1 mt-1">
-                    <a href="https://discord.gg/birdsupply" class="cta">Twitter ticket</a>
-                    <a href="https://discord.gg/birdsupply" class="cta">Discord ticket</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="section">
-        <div class="line"></div>
-        <div class="footer row j-between w-100">
-            <span>2023 - Supply’s shop</span>
-            <span>Made by VirgilAbloh</span>
-        </div>
-    </div>
-
-</div>
-
-<script src="main.min.js"></script>
-
+<script>
+    function scrollToSection() {
+        const section = document.getElementById('info-section');
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+</script>
 </body>
 </html>
