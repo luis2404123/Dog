@@ -1,1 +1,244 @@
+/* Grundlegendes Layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    line-height: 1.5;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    overflow-x: hidden; /* Verhindert horizontales Scrollen */
+}
 
+/* Header-Bereich */
+header {
+    padding: 80px 15px;
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--tertiary-color));
+    clip-path: ellipse(100% 75% at 50% 25%);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+header p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+header button {
+    padding: 10px 25px;
+    font-size: 1rem;
+    border-radius: 25px;
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease;
+}
+
+header button:hover {
+    transform: scale(1.1);
+}
+
+/* Container-Bereich */
+.container {
+    padding: 20px 15px;
+    max-width: 100%;
+}
+
+.container h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.container p,
+.container ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Listen */
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+ul li:before {
+    content: "✔";
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Call-to-Action */
+.cta {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.cta a {
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    background: var(--accent-color);
+    color: #fff;
+    border-radius: 25px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.cta a:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    padding: 30px 15px;
+    background: var(--tertiary-color);
+    color: #fff;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer-content p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    gap: 10px;
+    max-width: 300px;
+    box-shadow: var(--box-shadow);
+}
+
+.contact-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    header button {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    .container h2 {
+        font-size: 1.5rem;
+    }
+
+    ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cta a {
+        font-size: 0.9rem;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 0.8rem;
+    }
+
+    header button {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+
+    .cta a {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+
+    .footer-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .footer-content p {
+        font-size: 0.8rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.7rem;
+    }
+}
